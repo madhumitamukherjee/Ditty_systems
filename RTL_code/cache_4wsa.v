@@ -235,7 +235,7 @@ begin
 					rd_mem	  <= 1'd0;
 					wr_mem	  <= 1'd0;
 //					rdata_byte<= 8'd0;
-					wmem_byte <= 8'd0;
+					wmem_byte <= 'd0;
 					rmem_4byte<= 'd0;
 					wdata	  <= 'd0;
 					wtag0	  <= 'd0;
