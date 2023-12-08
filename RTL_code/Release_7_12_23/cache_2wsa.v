@@ -111,7 +111,7 @@ assign bytsel  = (state == IDLE) ? addr_cpu[1:0] : addrlatch[1:0];
 
 assign vw0 = rtag0[13];
 assign vw1 = rtag1[13];
-assign valid = vw0 & vw1;
+assign valid = vw0 | vw1;
 
 assign uw0  =rtag0[12];
 assign uw1  =rtag1[12];
