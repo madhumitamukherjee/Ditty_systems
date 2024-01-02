@@ -1,22 +1,20 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: Thales India Pvt LTD
+// Engineer: Madhumita Mukherjee
 // 
 // Create Date: 12.09.2023 11:00:35
-// Design Name: 
-// Module Name: testbench_multi_core_picorv32_v2
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: This is the testbench for the picorv32 in multicore setting with same code running in multicore enviornment....
-//              parameter N for both testbench and uut has to be set equal... 
-// Dependencies: 
+// Design Name: Test bench for Multi-core configuration of Picorv32   
+// Module Name: multicore_picorv32
+// Project Name: Ditty_systems
+// Target Devices: Virtex UltraScale VCU118 Evaluation Platform
+// Tool Versions: Vivado 2020.1
+// Description: This is the testbench for the setting a multicore configuration of Picorv32
 // 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
+// Dependencies: multicore_picorv32.sv
+//               picorv32.v
 // 
+// Revision:1.1
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -46,7 +44,7 @@ module testbench_multi_core_picorv32;
 	wire [N-1:0] [31:0] mem_wdata;
 	wire [N-1:0] [3:0] mem_wstrb;
 	reg  [N-1:0] [31:0] mem_rdata;
-	wire [N-1:0]        req_core;
+	
 
 for (genvar i=0; i<N; i++) begin
 	always @(posedge clk) begin
