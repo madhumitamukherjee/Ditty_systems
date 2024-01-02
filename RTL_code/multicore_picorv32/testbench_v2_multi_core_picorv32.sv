@@ -48,7 +48,7 @@ parameter N=2;
 	wire [N-1:0] [31:0] mem_wdata;
 	wire [N-1:0] [3:0] mem_wstrb;
 	reg  [N-1:0] [31:0] mem_rdata;
-	wire [N-1:0]        req_core;
+	
 
 for (genvar i=0; i<N; i++) begin
 	always @(posedge clk) begin
