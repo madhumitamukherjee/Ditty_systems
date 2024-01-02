@@ -39,7 +39,7 @@ genvar i;
 generate
      for(i=0; i< N; i=i+1) begin
      picorv32 core(
-    .clk         (clk           ),
+                .clk         (clk           ),
 		.resetn      (resetn        ),
 		.trap        (trap[i]       ),
 		.mem_valid   (mem_valid[i]  ),
