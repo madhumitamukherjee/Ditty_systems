@@ -1,23 +1,19 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: Thales India Pvt LTD
+// Engineer: Madhumita Mukherjee
 // 
-// Create Date: 12.09.2023 11:42:49
-// Design Name: 
-// Module Name: testbench_v2_multi_core_picorv32_v2
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: This is the testbench of multicore picorv32 with different code running. Here the parameter N=2 so two different codes 
-//              are running. Thus two memory are also loaded with two different values.  
+// Create Date: 12.09.2023 11:00:35
+// Design Name: Test bench for Multi-core configuration of Picorv32   
+// Module Name: multicore_picorv32
+// Project Name: Ditty_systems
+// Target Devices: Virtex UltraScale VCU118 Evaluation Platform
+// Tool Versions: Vivado 2020.1
+// Description: This is the testbench of multicore picorv32 with different code running. Thus two memory are also loaded with two different values.
+// Dependencies: multicore_picorv32.sv
+//               picorv32.v
 // 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Revision:1.1
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -96,7 +92,7 @@ end
 		memory[1][1] = 32'h 0000a023; //       sw      x0,0(x1)
 		memory[1][2] = 32'h 0000a103; // loop: lw      x2,0(x1)
 		memory[1][3] = 32'h 00210113; //       addi    x2,x2,2
-        memory[1][4] = 32'h 00210113; //       addi    x2,x2,2
+                memory[1][4] = 32'h 00210113; //       addi    x2,x2,2
 		memory[1][5] = 32'h 0020a023; //       sw      x2,0(x1)
 		memory[1][6] = 32'h ff5ff06f; //       j       <loop>
 	end
