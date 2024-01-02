@@ -9,8 +9,8 @@
 // Project Name: Ditty_systems
 // Target Devices: Virtex UltraScale VCU118 Evaluation Platform
 // Tool Versions: Vivado 2020.1
-// Description: This is the testbench for the setting a multicore configuration of Picorv32
-// 
+// Description: This is the testbench for multicore configuration of Picorv32. Here the single memory is connected to the two cores, thus two cores
+//              are running with same code and providing the same output. 
 // Dependencies: multicore_picorv32.sv
 //               picorv32.v
 // 
