@@ -6,7 +6,7 @@
 // Create Date: 11.09.2023 13:30:21
 // Design Name: Multi-core configuration of Picorv32   
 // Module Name: multicore_picorv32
-// Project Name: 
+// Project Name: Ditty Systems
 // Target Devices: Virtex UltraScale VCU118 Evaluation Platform
 // Tool Versions: Vivado 2020.1
 // Description: This is the RTL code for the setting a multicore configuration of Picorv32
